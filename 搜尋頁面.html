@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				 $("#go").click(function(){
+				 with(document.all){
+					if(email.value=="協尋")
+					{
+						location.href='協尋.html';
+					} 
+					else if(email.value=="購物")
+					{
+						location.href='購物.html';
+					} 
+					else
+					{
+						location.href='公佈欄_簡單任務頁面.html';
+					} 
+				 }
+				});
+			});
+		</script>
+		<style>
+		body{
+			background-color: black;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+			
+		}
+		p {
+			color: white;
+			text-align: center;
+			
+		}
+		</style>
+
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<form  align="center" method = "post" autocomplete = "on">
+		<br>
+		<h1>複合式搜尋頁面</h1>
+		<p>✨🌟可輸入想要的任務，進入<b>公佈欄</b>🌟✨</p>
+		<br>
+		<input type="text" name="email" size="35" placeholder = "全部_阿肥" />&nbsp&nbsp<input type="button" id="go" value="搜尋">
+		</form>
+	</body>
+</html>
