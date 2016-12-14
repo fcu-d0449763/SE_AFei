@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+	$(document).ready(function(){
+		$(".go").click(function(){
+			 with(document.all){
+				location.href='登入後-主介面.html';
+				alert("基本資料設定完成");
+			 }
+		});
+    });    
+    </script>
+
+    <style>
+	.box {
+	    position:absolute;
+	    left:50%;
+	    top:50%;
+	    
+	    margin-top:-250px;
+	    margin-left:-150px;
+	}
+    </style>
+</head>
+
+<body background="http://i.imgur.com/ay7Kh1a.png" text="#000000"　link="#0066cc"　vlink="#336600">
+    <div class="box">
+    <p>
+    <form>
+    <table width=350 border=1 cellpadding=5>
+	<tr><td colspan=2><center><font size="+2"><b>會員資料</b></font></center></td></tr>
+        <tr><td>姓名：</td><td><input type=text name=NAME placeholder=" 王大明" value="" autofocus = "autofocus" size=8 maxlength=8></td></tr>
+        <tr><td>暱稱：</td><td><input type=text name=name placeholder=" Blacktea" value="" size=10 maxlength=10></td></tr>
+        <tr><td>性別：</td>
+	<td>
+	  <select name="SEX">
+	  <option>男</option>
+	  <option selected>女</option>
+	  <option>第三性</option>
+	  </select>
+	</td></tr>
+        <tr><td>生日：</td><td><input type="date" name="OrderDate" value="" ></td></tr>
+	<tr><td>Line ID：</td><td><input type=text name="Line" placeholder=" fg653" value="" size=20></td></tr>
+	<tr><td>電話號碼：</td><td><input type=text name="phone" placeholder=" ex:0938530487" value="" size=20></td></tr>
+    </table>
+    </form>
+    </p>
+
+    <p>
+	<center><input type="button" class="go" value=" 提交 ""></center>
+    </p>
+    </div>
+</body>
+</html>
