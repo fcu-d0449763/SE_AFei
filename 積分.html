@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>校園互助系統 我的積分</title>
-<style type="text/css">
-#aside{
-width:550px;
-height:500px;
-text-align:center;
-background-color:#99FF99;
-padding:40px 10px;
-float:left;
-}
-#section{
-width:1150px;
-height:500px;
-text-align:center;
-background-color:#FFAA33;
-padding:40px;
-float:left;
-}
-</style>
+    <title>校園互助系統 我的積分</title>
+    <style type="text/css">
+        #aside {
+            width: 550px;
+            height: 500px;
+            text-align: center;
+            background-color: #99FF99;
+            padding: 40px 10px;
+            float: left;
+        }
+
+        #section {
+            width: 1150px;
+            height: 500px;
+            text-align: center;
+            background-color: #FFAA33;
+            padding: 40px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
 <h1 style="text-align:center;">積分系統</h1>
 <aside id="aside">
-<h1>布告欄</h1>
-<br>
-<h1>發文請求救援</h1>
+    <h1>布告欄</h1>
+    <br>
+    <h1><a href="發文系統.html">發文請求救援</a></h1>
 </aside>
 <section id="section">
-<h1>Points</h1>
-<script>
-var points;
-points=100;
-document.write(points)+"點";
-</script>
-<h1>section</h1>
-<a href="http://imgur.com/NJ28ZgV"><img src="http://i.imgur.com/NJ28ZgV.jpg" title="Allpass" /></a>
-<br></br>
-<h1 type="button" id="spend" onclick="fun()">花費100點兌換</h1>
-<script>function fun(){
-document.getElementById("spend").innerHTML="兌換成功";
-}
-</script>
+    <h1>Points</h1>
+    <script>
+        var points;
+        points = 100;
+        document.write(points+ "點</br>") ;
+    </script>
+
+    <img src="http://i.imgur.com/NJ28ZgV.jpg" title="Allpass"/>
+    <br>
+    <button type="button" id="spend" onclick="fun()">花費100點兌換</button>
+    <script>function fun() {
+        document.getElementById("spend").innerHTML = "兌換成功";
+    }
+    </script>
 </section>
 </body>
 </html>
